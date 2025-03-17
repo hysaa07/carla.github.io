@@ -1,1 +1,147 @@
+/* Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F5F5F5;
+    color: #333;
+}
+
+/* ======= Cabeçalho ======= */
+header {
+    background: #1E3A5F;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFD700;
+}
+
+/* ======= Seção Hero ======= */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #1E3A5F, #102A43);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #FFD700;
+    color: #1E3A5F;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: white;
+    color: #1E3A5F;
+}
+
+/* ======= Seções ======= */
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* ======= Projetos ======= */
+.projects {
+    background: white;
+}
+
+.project-card {
+    background: #1E3A5F;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background: #102A43;
+}
+
+/* ======= Contato ======= */
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.contact button {
+    background: #FFD700;
+    color: #1E3A5F;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #1E3A5F;
+    color: white;
+}
+
+/* ======= Rodapé ======= */
+footer {
+    background: #102A43;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
