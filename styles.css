@@ -1,37 +1,39 @@
-/* Importação da Fonte */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* Importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
+/* Estilos gerais */
 body {
-    background: #F5F5F5;
-    color: #333;
+    background-color: #000;
+    color: white;
 }
 
-/* ======= Cabeçalho ======= */
+/* Cabeçalho */
 header {
-    background: #1E3A5F;
-    padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 50px;
+    background: #000;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 100;
 }
 
 .logo h1 {
-    color: white;
     font-size: 24px;
     font-weight: bold;
+    color: #ff007f; /* Rosa pink */
 }
 
 .nav-links {
@@ -48,14 +50,23 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #FFD700;
+    color: #ff007f; /* Rosa pink */
 }
 
-/* ======= Seção Hero ======= */
+/* Seções */
+.section {
+    display: none;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Seção Hero */
 .hero {
     height: 100vh;
-    background: linear-gradient(to right, #1E3A5F, #102A43);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,8 +74,9 @@ header {
 }
 
 .hero h2 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .hero p {
@@ -74,8 +86,8 @@ header {
 
 .cta-button {
     display: inline-block;
-    background: #FFD700;
-    color: #1E3A5F;
+    background: #ff007f;
+    color: white;
     padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -84,24 +96,41 @@ header {
 }
 
 .cta-button:hover {
-    background: white;
-    color: #1E3A5F;
+    background: #000;
+    color: #ff007f;
 }
 
-/* ======= Seções ======= */
+/* Seções de conteúdo */
 .content-section {
     padding: 80px 20px;
-    text-align: center;
+    background-color: #1f1f1f;
 }
 
-/* ======= Projetos ======= */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Projetos */
 .projects {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-card {
-    background: #1E3A5F;
-    color: white;
+    background: white;
+    color: #1f3c68;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
@@ -109,39 +138,70 @@ header {
     transition: 0.3s;
 }
 
-.project-card:hover {
-    background: #102A43;
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
 }
 
-/* ======= Contato ======= */
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff007f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project-card .btn:hover {
+    background: #000;
+    color: #ff007f;
+}
+
+/* Formulário de contato */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .contact input, .contact textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: none;
     outline: none;
 }
 
 .contact button {
-    background: #FFD700;
-    color: #1E3A5F;
+    background: #ff007f;
+    color: white;
     padding: 12px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .contact button:hover {
-    background: #1E3A5F;
-    color: white;
+    background: #000;
+    color: #ff007f;
 }
 
-/* ======= Rodapé ======= */
+/* Rodapé */
 footer {
-    background: #102A43;
+    background: #000;
     text-align: center;
     padding: 20px;
-    color: white;
+    font-size: 14px;
+    margin-top: 40px;
 }

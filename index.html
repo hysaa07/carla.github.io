@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Heloysa Alves - Desenvolvedora Web e Designer Gráfico">
-    <title>Portfólio | Heloysa Alves</title>
+    <title>Portfólio de Heloysa Alves</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Cabeçalho -->
     <header>
         <nav>
@@ -15,74 +16,77 @@
                 <h1>Heloysa Alves</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#testemunhos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('home')">Início</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('sobre')">Sobre</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('projetos')">Projetos</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('contato')">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Início -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Olá, eu sou Heloysa Alves</h2>
-            <p>Desenvolvedora Web e Designer Gráfica, apaixonada por criar soluções inovadoras e impactantes.</p>
-            <a href="#projetos" class="cta-button">Veja meus projetos</a>
-        </div>
-    </section>
-
-    <!-- Seção Sobre -->
-    <section id="sobre" class="content-section">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Sou uma profissional com experiência em HTML, CSS e JavaScript. Minha paixão está em criar experiências visuais envolventes e interfaces funcionais.</p>
-        </div>
-    </section>
-
-    <!-- Seção Projetos -->
-    <section id="projetos" class="content-section projects">
-        <h2>Meus Projetos</h2>
-        <div class="project-cards">
-            <div class="project-card">
-                <img src="projeto1.jpg" alt="Projeto Agência Criativa">
-                <h3>Landing Page para Agência Criativa</h3>
-                <p>Landing Page moderna e responsiva desenvolvida para uma agência criativa.</p>
-                <a href="#" class="btn">Ver mais</a>
+    <!-- Seções -->
+    <div id="home" class="section active">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Olá, eu sou Heloysa Alves</h2>
+                <p>Sou Desenvolvedora Web e Designer Gráfico, com paixão por criar soluções digitais que combinam design inovador e funcionalidade.</p>
+                <a href="javascript:void(0);" onclick="showSection('projetos')" class="cta-button">Veja meus projetos</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Seção Depoimentos -->
-    <section id="testemunhos" class="content-section testimonials">
-        <h2>O que dizem sobre meu trabalho</h2>
-        <div class="testimonial-cards">
-            <div class="testimonial">
-                <p>"Heloysa tem um olhar detalhista e técnico incrível! Meu site ficou maravilhoso." - Cliente Satisfeito</p>
+    <div id="sobre" class="section">
+        <section class="content-section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p>Olá, sou *Heloysa Alves, uma desenvolvedora web e designer gráfica apaixonada por criar experiências digitais inovadoras e eficazes. Com experiência em **HTML, **CSS* e *JavaScript*, busco sempre a combinação perfeita entre estética e funcionalidade. Meu objetivo é ajudar empresas e indivíduos a atingirem seus objetivos por meio de soluções digitais criativas e impactantes.</p>
             </div>
-            <div class="testimonial">
-                <p>"Criatividade e profissionalismo definem o trabalho da Heloysa. Super recomendo!" - Parceiro de Projeto</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="content-section contact">
-        <h2>Entre em Contato</h2>
-        <form action="mailto:heloysaalves07@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-        <p>E-mail: <a href="mailto:heloysaalves07@gmail.com">heloysaalves07@gmail.com</a></p>
-        <p>Telefone: <a href="tel:8494588269">8494588269</a></p>
-    </section>
+    <div id="projetos" class="section">
+        <section class="content-section projects">
+            <h2>Meus Projetos</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img src="imagem1.jpg" alt="Landing Page para Agência Criativa">
+                    <h3>Landing Page para Agência Criativa</h3>
+                    <p>Desenvolvi uma landing page para uma campanha de marketing de uma agência criativa, com design visualmente atrativo e otimização para conversões.</p>
+                    <a href="link-do-projeto" class="btn">Ver mais</a>
+                </div>
+                <div class="project-card">
+                    <img src="imagem2.jpg" alt="Website Institucional">
+                    <h3>Website Institucional</h3>
+                    <p>Criação de um site institucional para uma empresa local, focado em uma navegação clara e responsiva, com design moderno e compatibilidade com todos os dispositivos.</p>
+                    <a href="link-do-projeto" class="btn">Ver mais</a>
+                </div>
+                <div class="project-card">
+                    <img src="imagem3.jpg" alt="E-commerce para Loja de Roupas">
+                    <h3>E-commerce para Loja de Roupas</h3>
+                    <p>Desenvolvimento de um e-commerce completo, com uma experiência de compra otimizada, incluindo funcionalidades de checkout seguro e navegação intuitiva.</p>
+                    <a href="link-do-projeto" class="btn">Ver mais</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contato" class="section">
+        <section class="content-section contact">
+            <h2>Entre em Contato</h2>
+            <form action="mailto:heloysaalves07@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </div>
 
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 Heloysa Alves. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
